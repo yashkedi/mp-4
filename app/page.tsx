@@ -20,27 +20,26 @@ export default async function Home() {
                     <article
                         key={book.id}
                         className="
-              bg-white border border-[#ccc]
-              pt-[2vh] pr-[2vw] pb-[2vh] pl-[2vw]
-              w-full
+              bg-white border border-[#ccc] p-6
+
             "
                     >
                         <img
                             src={book.image}
                             alt={book.title}
-                            className="w-full border border-[#bbb] mb-[2%]"
+                            className="w-full border border-[#bbb]"
                         />
 
-                        <h1 className="text-[calc(1px+1.5vw)] text-[#000000] m-0 mb-[1%] text-center">
+                        <h1 className="text-[calc(1px+1.5vw)] text-[#000000]  text-center">
                             <strong>{book.title}</strong>
                         </h1>
 
-                        <p className="text-[calc(1px+1.5vw)] text-[#374151] text-center my-[1%]">
+                        <p className="text-[calc(1px+1.5vw)] text-[#374151] text-center">
                             <strong>Author:</strong>{" "}
                             {book.authors.map((author: AuthorType) => (author.name))}
                         </p>
 
-                        <p className="text-[calc(1px+1.5vw)] text-[#374151] text-center my-[1%]">
+                        <p className="text-[calc(1px+1.5vw)] text-[#374151] text-center">
                             <strong>Rating:</strong>{" "}
                             {book.rating.average}
                         </p>

@@ -7,15 +7,10 @@ export default async function Home() {
     return (
         <div className="
       w-[80vw] h-full mx-auto
-      pt-[2vh] pr-[2vw] pb-[2vh] pl-[2vw]
       bg-[#00000]
       flex flex-col items-center justify-start
     ">
-            <section
-                className="
-          gap-y-[3vh] gap-x-[2vw]
-        "
-            >
+            <section>
                 {books.map((book) => (
                     <article
                         key={book.id}
